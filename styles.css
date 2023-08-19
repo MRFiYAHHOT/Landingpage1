@@ -1,0 +1,155 @@
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: url("Tsunami cover (1).png");
+    color: #020202;
+    
+  }
+h2{
+  color: #FFFC00;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul.menu {
+    display: inline-block;
+    list-style-type: none;
+}
+li.menu_list {
+    height: 85px;
+    width: 85px;
+    position: relative;
+}
+li.menu_list .front,
+a.side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 86px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+li.menu_list .front {
+    background-color: #34465d;
+    color: #FFFC00;
+    transform-origin: 0 0;
+}
+a.side {
+    background-color: #FFFC00;
+    color: #34465d;
+    transform-origin: 0 0 85px;
+    transform: rotateY(-90deg);
+}
+li.menu_list:hover a.side {
+    transform: rotateY(0deg);
+}
+li.menu_list:hover .front {
+    transform: rotateY(90deg);
+}
+
+.content-info {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  /*border: 1px solid rgb(255, 217, 0); /* Yellow */
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+
+.music-player {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the audio player controls */
+#audio-player {
+  width: 300px;
+  margin: auto;
+}
+
+
+  .iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  header {
+    background-color: #1F2937;
+    color: #fff;
+    text-align: left;
+    padding: 2rem;
+  }
+  
+  .main-section {
+    padding: 4rem;
+    background-color: #f4f4f4;
+    border-style: groove;
+    border-color:#0055ff17;
+    border-radius: 10px;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-size: large;
+  }
+  
+  footer {
+    background-color: #1F2937;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  .signup-button {
+    background-color: #007bff; /* Blue color, you can change this */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .button:hover{
+    background-color: cyan;
+    opacity: 1;
+  }
+
+  img {
+    width: 800px;
+    height: auto;
+    image-resolution: 300dpi;
+    
+  }
+  /* Media queries */
